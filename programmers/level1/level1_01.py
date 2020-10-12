@@ -1,3 +1,7 @@
+'''
+< 체육복 >
+'''
+
 
 n1, n2, n3 = 5, 5, 3
 lost1, lost2, lost3 = [2, 4], [2, 4], [3]
@@ -24,7 +28,7 @@ def solution(n, lost, reserve):
             set_lost.remove(i-1)
         elif i+1 in set_lost:
             set_lost.remove(i+1)
-    return n- len(set_lost)
+    return n - len(set_lost)
 
 
 print(solution(n1, lost1, reserve1))

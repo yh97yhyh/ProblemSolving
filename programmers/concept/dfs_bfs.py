@@ -16,7 +16,6 @@ currentNode, Stack, visitedNode
 '''
 
 
-
 # BFS
 __author__ = 'Minsuk Heo'
 
@@ -24,6 +23,7 @@ vertexList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 edgeList = [(0, 1), (1, 2), (1, 3), (3, 4), (4, 5), (1, 6)]
 graphs = (vertexList, edgeList)
 
+print(graphs)
 
 def bfs(graph, start):
     vertexList, edgeList = graph
@@ -45,7 +45,7 @@ def bfs(graph, start):
     return visitedList
 
 
-print(bfs(graphs, 0))
+# print(bfs(graphs, 0))
 
 
 # DFS
@@ -72,4 +72,4 @@ def dfs(graph, start):
         visitedVertex.append(current)
     return visitedVertex
 
-print(dfs(graphs, 0))
+# print(dfs(graphs, 0))
