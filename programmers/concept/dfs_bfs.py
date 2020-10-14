@@ -23,7 +23,7 @@ vertexList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 edgeList = [(0, 1), (1, 2), (1, 3), (3, 4), (4, 5), (1, 6)]
 graphs = (vertexList, edgeList)
 
-print(graphs)
+# print(graphs)
 
 def bfs(graph, start):
     vertexList, edgeList = graph
@@ -31,9 +31,14 @@ def bfs(graph, start):
     queue = [start]
     adjacencyList = [[] for vertex in vertexList]
 
+    # print(vertexList)
+    # print(edgeList)
+
     # fill adjacencyList from graph
     for edge in edgeList:
         adjacencyList[edge[0]].append(edge[1])
+
+    print(adjacencyList)
 
     # bfs
     while queue:
@@ -45,7 +50,7 @@ def bfs(graph, start):
     return visitedList
 
 
-# print(bfs(graphs, 0))
+print(bfs(graphs, 0))
 
 
 # DFS
