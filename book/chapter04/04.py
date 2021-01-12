@@ -12,7 +12,7 @@ x, y, direction = map(int, input().split())
 # 방문 위치 저장
 visited = [[0] * m for _ in range(n)]
 
-visited[x][y] = 1;
+visited[x][y] = 1
 
 # 맵 정보 입력
 array = []
