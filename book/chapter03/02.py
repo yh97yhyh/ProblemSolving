@@ -19,6 +19,6 @@ for i in range(M):
     else:
         answer += n2
         count = 0
-    print(count, answer)
+    # print(count, answer)
 
 print(answer)
